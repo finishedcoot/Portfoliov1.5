@@ -1,0 +1,189 @@
+{
+	"skills": [
+		"HTML",
+		"CSS",
+		"JavaScript",
+		"TypeScript",
+		"SASS",
+		"React.js",
+		"Next.js",
+		"Gatsby.js",
+		"Redux.js",
+		"Three.js",
+		"Gsap",
+		"Vue.js",
+		"Nuxt.js",
+		"TailwindCSS",
+		"HeadlessUI",
+		"MaterialUI",
+		"SASS",
+		"GIT",
+		"Framer-Motion",
+		"RestAPI",
+		"React Query",
+		"Styled Components"
+	],
+	"familiar": [
+		"Node.js",
+		"Python",
+		"MongoDB",
+		"Mongoose",
+		"TypeORM",
+		"GraphQL",
+		"Express.js",
+		"Nest.js",
+		"Docker",
+		"Bash",
+		"CI/CD"
+	],
+	"experiences": [
+		{
+			"title": "BANINO",
+			"description":"Being engaged in BaninoPC ecommerce web application development from day one by following clean code principles.\nTransforming UI/UX designs into detailed interactive interfaces.\nAlways aimed for the best performance possible by every way we could like code spliting and many of Next.js features like SSR or ISR.\nConsidering every aspect of the application in order to handle authentication and security.\n" ,
+			"tools":[
+				"HTML",
+				"CSS",
+				"TypeScript",
+				"React.js",
+				"Next.js",
+				"SSR",
+				"ISR",
+				"Recoil",
+				"SWR",
+				"TailwindCSS",
+				"HeadlessUI",
+				"qs",
+				"Lodash",
+				"Axios",
+				"Next pwa",
+				"Bundle Analyzer"
+			],
+			"date":"August 2022 -  April 2023",
+			"logo":"/images/banino1.png" ,
+			"website":"https://baninopc.com",
+			"github":null
+		},
+		{
+			"title": "ZOIE",
+			"description":"At first Zoie was going to be a simple portfolio for a talented friend of mine, but as we continued to develop it, this simple portfolio turned into a beautiful platform, it was made with reactjs and attention to smallest detail of client preference, currently hosted at aws." ,
+			"tools":[
+				"HTML",
+				"CSS",
+				"SASS",
+				"TypeScript",
+				"React.js",
+				"Next.js",
+				"SSR",
+				"Redux",
+				"Styled Components",
+				"TailwindCSS",
+				"Framer Motion"
+			],
+			"date":"October 2020 - Present",
+			"logo":"/images/banino1.png" ,
+			"website":"https://zoie.com",
+			"github":"https://github.com/finishedcoot/zoie-next-typed"
+		},
+		{
+			"title": "FAKHR E JAVID",
+			"description":"Fakhr e Javid is a local publication, I've been honered to design and develop their website, with a modern yet minimal approach I was able to build a beautiful and elegant website with all the functionalities they asked for." ,
+			"tools":[
+				"HTML",
+				"CSS",
+				"SASS",
+				"React.js",
+				"Gatsby.js",
+				"SSG",
+				"Styled Components",
+				"Framer Motion"
+			],
+			"date":"October 2020 - Present",
+			"logo":"/images/banino1.png" ,
+			"website":"https://zoie.com",
+			"github":"https://github.com/finishedcoot/zoie-next-typed"
+		},
+		{
+			"title": "SORMEI BEATZ",
+			"description":"Fakhr e Javid is a local publication, I've been honered to design and develop their website, with a modern yet minimal approach I was able to build a beautiful and elegant website with all the functionalities they asked for." ,
+			"tools":[
+				"HTML",
+				"CSS",
+				"React.js",
+				"Gatsby.js",
+				"SSG",
+				"Styled Components",
+				"Three.js"
+			],
+			"date":"October 2020 - Present",
+			"logo":"/images/banino1.png" ,
+			"website":"https://sormeibeatz.netlify.app/",
+			"github":"https://github.com/finishedcoot/sormeibeatz"
+		},
+		{
+			"title": "MAHTA CHARITY",
+			"description":"Mahta is a charity for people with hemophilia, in this project I was asked to build some sort of platfrom for their informative contents such as short books and some video clips, with constant communication and understanding of their needs I built this very simple website with reactjs, I hope to add an admin panel to is very soon." ,
+			"tools":[
+				"HTML",
+				"CSS",
+				"React.js",
+				"Axios",
+				"Node.js",
+				"Express.js",
+				"Mongoose",
+				"MongoDB"
+			],
+			"date":"October 2020 - Present",
+			"logo":null ,
+			"website":"https://sormeibeatz.netlify.app/",
+			"github":"https://github.com/finishedcoot/sormeibeatz"
+		}
+		,{
+			"title": "NATOURS API",
+			"description":"Natours is a project that I built with help of a course that I took about node.js, it is made with express, mongodb(mongoose), axios, jwt authentication,and some general libraries for its security, it is very feature rich platform, its like a tour agancy, with customers, tour guids and admin, you can sort tours in many ways, e.g. this month 5 top tours, many of them made with different tools of mongodb." ,
+			"tools":[
+				"HTML",
+				"Pug",
+				"Axios",
+				"Node.js",
+				"Express.js",
+				"Mongoose",
+				"MongoDB",
+				"bcryptjs",
+				"cors",
+				"JWT",
+				"nodemailer",
+				"validator",
+				"helmet"
+			],
+			"date":"October 2020 - Present",
+			"logo":null ,
+			"website":null,
+			"github":"https://github.com/finishedcoot/natours"
+		},
+		{
+			"title": "NATOURS API",
+			"description":"Natours is a project that I built with help of a course that I took about node.js, it is made with express, mongodb(mongoose), axios, jwt authentication,and some general libraries for its security, it is very feature rich platform, its like a tour agancy, with customers, tour guids and admin, you can sort tours in many ways, e.g. this month 5 top tours, many of them made with different tools of mongodb." ,
+			"tools":[
+				"HTML",
+				"Pug",
+				"Axios",
+				"Node.js",
+				"Express.js",
+				"Mongoose",
+				"MongoDB",
+				"bcryptjs",
+				"cors",
+				"JWT",
+				"nodemailer",
+				"validator",
+				"helmet"
+			],
+			"date":"October 2020 - Present",
+			"logo":null ,
+			"website":null,
+			"github":"https://github.com/finishedcoot/natours"
+		}
+	]
+}
+
+
