@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Image from "next/image";
 import Section from "@/components/Section";
 import {GetStaticProps, NextPage} from "next";
 import data from "@/data/info.json"
@@ -7,6 +6,8 @@ import {InfoInterface} from "@/types/InfoTypes";
 import {Poppins} from 'next/font/google'
 import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
+import Flower from "@/components/Flower";
+import {motion} from 'framer-motion'
 
 const Font = Poppins({weight: ['100', '200', '300', '400', '500', '600']})
 
@@ -27,7 +28,17 @@ const Home: NextPage<{ data: InfoInterface }> = ({data}) => {
                             <h2 className={'text-7xl font-semibold'}>I&apos;m Ardeshir</h2>
                         </section>
                         <Section title={'ABOUT ME'}>
-                            <p className={'mt-8'}>
+                            <p className={'mt-8 relative'}>
+                                <motion.span
+                                    initial={{
+                                        left: 0
+                                    }}
+                                    whileInView={{
+                                        left: '100%'
+                                    }}
+                                    transition={{ ease: [0.43, 0.13, 0.23, 0.96], duration: 3  ,delay:0.3}}
+                                    viewport={{ once: true }}
+                                    className={'absolute inset-0 bg-white'}></motion.span>
                                 When I was younger, I always thought that I want to be an artist, like a photographer or
                                 a
                                 musician, and on my journey to find the right path and the feeling of satisfaction, I
@@ -66,12 +77,13 @@ const Home: NextPage<{ data: InfoInterface }> = ({data}) => {
                                 than my yesterday.
                             </p>
                         </Section>
-                     <Skills skills={data.skills} familiar={data.familiar}/>
+                        <Skills skills={data.skills} familiar={data.familiar}/>
                         <Experience experiences={data.experiences}/>
                     </div>
                 </div>
-                <Image src={'/flower.svg'} alt={'my flower'} className={'absolute inset-0 -z-10'} width={1900}
-                       height={4000}/>
+                <div className={'absolute inset-0 -z-10'}><Flower/></div>
+                {/*<Image src={'/flower.svg'} alt={'my flower'} className={'absolute inset-0 -z-10'} width={1900}
+                       height={4000}/>*/}
 
             </main>
         </>

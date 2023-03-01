@@ -58,8 +58,8 @@
 				"Next pwa",
 				"Bundle Analyzer"
 			],
-			"date":"August 2022 -  April 2023",
-			"logo":"/images/banino1.png" ,
+			"date":"August 2022 - April 2023",
+			"logo":"/images/banino.svg" ,
 			"website":"https://baninopc.com",
 			"github":null
 		},
@@ -77,10 +77,11 @@
 				"Redux",
 				"Styled Components",
 				"TailwindCSS",
-				"Framer Motion"
+				"Framer Motion",
+				"Node.js"
 			],
 			"date":"October 2020 - Present",
-			"logo":"/images/banino1.png" ,
+			"logo":"/images/zoie.png" ,
 			"website":"https://zoie.com",
 			"github":"https://github.com/finishedcoot/zoie-next-typed"
 		},
@@ -97,14 +98,14 @@
 				"Styled Components",
 				"Framer Motion"
 			],
-			"date":"October 2020 - Present",
-			"logo":"/images/banino1.png" ,
-			"website":"https://zoie.com",
-			"github":"https://github.com/finishedcoot/zoie-next-typed"
+			"date":"July 2021 - Present",
+			"logo":"/images/fakhr-e-javid.png" ,
+			"website":"https://fakhr-e-javid.com/",
+			"github":"https://github.com/finishedcoot/fakhr-e-javid"
 		},
 		{
 			"title": "SORMEI BEATZ",
-			"description":"Fakhr e Javid is a local publication, I've been honered to design and develop their website, with a modern yet minimal approach I was able to build a beautiful and elegant website with all the functionalities they asked for." ,
+			"description":"Sormei Beatz is a minimal website for the talented musician Omid Hashemi, it is built with React.js, styled with Styled Components and with the help of Three.js I was able to create a interactive, minimal yet chaotic field of 3D noise to visualize different frequencies of the playing song." ,
 			"tools":[
 				"HTML",
 				"CSS",
@@ -114,14 +115,14 @@
 				"Styled Components",
 				"Three.js"
 			],
-			"date":"October 2020 - Present",
-			"logo":"/images/banino1.png" ,
+			"date":"April 2022 - August 2022",
+			"logo":"/images/sormei.png" ,
 			"website":"https://sormeibeatz.netlify.app/",
 			"github":"https://github.com/finishedcoot/sormeibeatz"
 		},
 		{
 			"title": "MAHTA CHARITY",
-			"description":"Mahta is a charity for people with hemophilia, in this project I was asked to build some sort of platfrom for their informative contents such as short books and some video clips, with constant communication and understanding of their needs I built this very simple website with reactjs, I hope to add an admin panel to is very soon." ,
+			"description":"Mahta is a charity for people with hemophilia, in this project I was asked to build some sort of platform for their informative contents such as short books and some video clips, with constant communication and understanding of their needs I built this very simple website with reactjs, I hope to add an admin panel to is very soon." ,
 			"tools":[
 				"HTML",
 				"CSS",
@@ -132,9 +133,9 @@
 				"Mongoose",
 				"MongoDB"
 			],
-			"date":"October 2020 - Present",
-			"logo":null ,
-			"website":"https://sormeibeatz.netlify.app/",
+			"date":"October 2020 - January 2021",
+			"logo":"/images/mahta.svg" ,
+			"website":"https://mahta.iran.liara.run/",
 			"github":"https://github.com/finishedcoot/sormeibeatz"
 		}
 		,{
@@ -155,30 +156,7 @@
 				"validator",
 				"helmet"
 			],
-			"date":"October 2020 - Present",
-			"logo":null ,
-			"website":null,
-			"github":"https://github.com/finishedcoot/natours"
-		},
-		{
-			"title": "NATOURS API",
-			"description":"Natours is a project that I built with help of a course that I took about node.js, it is made with express, mongodb(mongoose), axios, jwt authentication,and some general libraries for its security, it is very feature rich platform, its like a tour agancy, with customers, tour guids and admin, you can sort tours in many ways, e.g. this month 5 top tours, many of them made with different tools of mongodb." ,
-			"tools":[
-				"HTML",
-				"Pug",
-				"Axios",
-				"Node.js",
-				"Express.js",
-				"Mongoose",
-				"MongoDB",
-				"bcryptjs",
-				"cors",
-				"JWT",
-				"nodemailer",
-				"validator",
-				"helmet"
-			],
-			"date":"October 2020 - Present",
+			"date":"July 2022 - August 2022",
 			"logo":null ,
 			"website":null,
 			"github":"https://github.com/finishedcoot/natours"
