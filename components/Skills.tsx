@@ -27,9 +27,9 @@ const Skills: React.FC<{ skills: string[], familiar: string[] }> = ({skills, fam
 
 
     return (<>
-        <Section title={'SKILLS'} parentClassName={'mt-16'}>
+        <Section title={'SKILLS'} parentClassName={'mt-32'}>
             <ul
-                className={'relative pl-5 mt-8 max-h-[40vh] grid grid-cols-3 gap-y-4'}>
+                className={'relative pl-5 mt-12 max-h-[40vh] grid grid-cols-3 gap-y-4'}>
                 <motion.span  ref={skillsInView[0]}
                               initial={{
                                   left: 0
@@ -37,13 +37,13 @@ const Skills: React.FC<{ skills: string[], familiar: string[] }> = ({skills, fam
                               animate={skillsControl}
                               variants={boxVariant}
                               viewport={{ once: true }}
-                              transition={{ ease: [0.43, 0.13, 0.23, 0.96], duration: 3, delay:0.3 }} className={'absolute inset-0 bg-white'}/>
+                              transition={{ ease: [0.43, 0.13, 0.23, 0.96], duration: 1.5, delay:0.3 }} className={'absolute inset-0 bg-white'}/>
                 {skills.map((skill, index) => <li key={index}
                                                        className={'list-disc col-span-1'}>{skill}</li>)}
             </ul>
         </Section>
-        <Section title={'FAMILIAR WITH'} parentClassName={'mt-8'}>
-            <ul className={'relative pl-5 mt-8 max-h-[40vh] grid grid-cols-3 gap-y-4'}>
+        <Section title={'FAMILIAR WITH'} parentClassName={'mt-20'}>
+            <ul className={'relative pl-5 mt-12 max-h-[40vh] grid grid-cols-3 gap-y-4'}>
                 <motion.span ref={familiarWithInView[0]}
                              initial={{
                                  left: 0
@@ -51,7 +51,7 @@ const Skills: React.FC<{ skills: string[], familiar: string[] }> = ({skills, fam
                              animate={familiarWithControl}
                              variants={boxVariant}
                              viewport={{ once: true }}
-                             transition={{ ease: [0.43, 0.13, 0.23, 0.96], duration: 3, delay:0.3 }} className={'absolute inset-0 bg-white'}/>
+                             transition={{ ease: [0.43, 0.13, 0.23, 0.96], duration: 1.5, delay:0.3 }} className={'absolute inset-0 bg-white'}/>
                 {familiar.map((skill, index) => <li key={index}
                                                          className={'list-disc col-span-1'}>{skill}</li>)}
             </ul>

@@ -1,4 +1,4 @@
-import React, {ReactNode, useEffect, useRef} from "react";
+import React, {ReactNode, useEffect} from "react";
 import { useInView } from "react-intersection-observer";
 import {motion, useAnimation} from "framer-motion";
 
@@ -26,7 +26,7 @@ const Section: React.FC<{
     },[inView])
 
     return <section className={`flex flex-col ${parentClassName}`}>
-        <motion.h1 ref={ref} className={titleClassName || 'text-5xl font-semibold w-max relative cursor-default'}>
+        <motion.h1 ref={ref} className={titleClassName || 'text-5xl font-bold w-max relative cursor-default'}>
             {title}
             <motion.span
                 initial={{
@@ -35,7 +35,7 @@ const Section: React.FC<{
                 animate={control}
                 variants={boxVariant}
                  viewport={{ once: true }}
-                transition={{ ease: [0.43, 0.13, 0.23, 0.96], duration: 3, delay:0.3 }}
+                transition={{ ease: [0.43, 0.13, 0.23, 0.96], duration: 0.8, delay:0.3 }}
 
                 className={'absolute inset-0 bg-white'}></motion.span>
             <span className={'absolute left-0 -bottom-2 h-1 w-full bg-black'}/>
@@ -47,7 +47,7 @@ const Section: React.FC<{
                     left: '100%'
                 }}
                  viewport={{ once: true }}
-                transition={{ ease: [0.43, 0.13, 0.23, 0.96], duration: 3, delay:0.3 }}
+                transition={{ ease: [0.43, 0.13, 0.23, 0.96], duration: 0.8, delay:0.3 }}
                 className={'absolute left-0 -bottom-2 h-1 w-full bg-white'}/>
         </motion.h1>
 

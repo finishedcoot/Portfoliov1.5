@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Section from "@/components/Section";
 import {GetStaticProps, NextPage} from "next";
 import data from "@/data/info.json"
 import {InfoInterface} from "@/types/InfoTypes";
@@ -8,6 +7,8 @@ import Skills from "@/components/Skills";
 import AllExperiences from "@/components/AllExperiences";
 import Flower from "@/components/Flower";
 import {motion} from 'framer-motion'
+import About from "@/components/About";
+import Contact from "@/components/Contact";
 
 const Font = Poppins({weight: ['100', '200', '300', '400', '500', '600']})
 
@@ -22,69 +23,31 @@ const Home: NextPage<{ data: InfoInterface }> = ({data}) => {
             </Head>
             <main className={`relative w-full overflow-hidden  ${Font.className}`}>
                 <div className={'container mx-auto  grid grid-cols-12 mb-10'}>
-                    <div className={'col-start-6 col-end-12 flex flex-col'}>
+                    <div className={'md:col-start-6 col-start-2 col-end-12 flex flex-col'}>
                         <section className={'h-screen flex flex-col items-start justify-center'}>
-                            <h1 className={'text-8xl font-semibold'}>Hello</h1>
-                            <h2 className={'text-7xl font-semibold'}>I&apos;m Ardeshir</h2>
-                        </section>
-                        <Section title={'ABOUT ME'}>
-                            <p className={'mt-8 relative'}>
+                            <div className={'relative'}>
+                                <h1 className={'text-8xl font-semibold'}>Hello</h1>
+                                <h2 className={'text-7xl font-semibold'}>I&apos;m Ardeshir</h2>
                                 <motion.span
                                     initial={{
-                                        left: 0
+                                        top: 0
                                     }}
                                     whileInView={{
-                                        left: '100%'
+                                        top: '100%'
                                     }}
-                                    transition={{ ease: [0.43, 0.13, 0.23, 0.96], duration: 3  ,delay:0.7}}
+                                    transition={{ ease: [0.46, 0.32, 0.55, 0.77], duration: 2}}
                                     viewport={{ once: true }}
-                                    className={'absolute inset-0 bg-white'}></motion.span>
-                                When I was younger, I always thought that I want to be an artist, like a photographer or
-                                a
-                                musician, and on my journey to find the right path and the feeling of satisfaction, I
-                                tried
-                                to learn many skills, like photography, painting etc. none of them felt fulfilling,
-                                after a few
-                                years I joined a bootcamp for python, at that time it didn’t feel like art to me but it
-                                was so
-                                satisfying to see that you have the power to solve real world problems with just a few
-                                lines
-                                of code, so it began, an endless journey to learn more about the computer science.
-                                <br/>
-                                <br/>
-                                The more I studied and played with new technologies, the more it felt like being an
-                                artist
-                                and when I got focused on the frontend development, it felt like magic, making UI/UX
-                                designers visions come to life, with every little bit of detail and its so amazing to
-                                see your
-                                work on all sorts of devices by applying responsive design principles. It was around
-                                that
-                                time that I found out about webgl and the magic of 3D web design and with a little help
-                                from Three.js you can create the most unbelievable web pages and user experiences.
-                                <br/>
-                                <br/>
-                                As I went deeper into the wondrous world of computer science, I became more interested
-                                in
-                                its architectural aspects, learning about different design patterns and their amazing
-                                ways
-                                of handling all sorts of problems with precision and creative insight, currently I’m
-                                learning
-                                Nest.js to get more familiar with APIs architectures.
-                                <br/>
-                                <br/>
-                                I believe there is no unsolvable problem and in the end of the day all I want, is to be
-                                better
-                                than my yesterday.
-                            </p>
-                        </Section>
+                                    className={'absolute inset-0 bg-white'}/>
+                            </div>
+
+                        </section>
+                        <About/>
                         <Skills skills={data.skills} familiar={data.familiar}/>
                         <AllExperiences experiences={data.experiences}/>
+                        <Contact/>
                     </div>
                 </div>
-                <div className={'absolute inset-0 -z-10'}><Flower/></div>
-                {/*<Image src={'/flower.svg'} alt={'my flower'} className={'absolute inset-0 -z-10'} width={1900}
-                       height={4000}/>*/}
-
+               <Flower/>
             </main>
         </>
     )

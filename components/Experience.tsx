@@ -41,7 +41,7 @@ const Experience: React.FC<{ experience: ExperiencesInterface }> = ({experience}
             descControl.start("visible")
         }
     }, [descInView])
-    return (<div className={'flex flex-col items-start first-of-type:mt-20 mt-20'}>
+    return (<div className={'flex flex-col items-start mt-20'}>
 
         <div className={'flex flex-col justify-end relative'}>
             <h1
@@ -56,7 +56,7 @@ const Experience: React.FC<{ experience: ExperiencesInterface }> = ({experience}
                     animate={titleControl}
                     variants={boxVariant}
                     viewport={{once: true}}
-                    transition={{ease: [0.43, 0.13, 0.23, 0.96], duration: 3, delay: 0.3}}
+                    transition={{ease: [0.43, 0.13, 0.23, 0.96], duration: 1.5, delay: 0.3}}
                     className={'absolute inset-0 bg-white'}/>
             </h1>
             <span ref={dateRef} className={'text-sm text-neutral-500 relative'}>
@@ -67,7 +67,7 @@ const Experience: React.FC<{ experience: ExperiencesInterface }> = ({experience}
     animate={dateControl}
     variants={boxVariant}
     viewport={{once: true}}
-    transition={{ease: [0.43, 0.13, 0.23, 0.96], duration: 3, delay: 0.3}}
+    transition={{ease: [0.43, 0.13, 0.23, 0.96], duration: 1.5, delay: 0.3}}
     className={'absolute inset-0 bg-white'}/>
                 {experience.date}</span>
             {experience.logo &&
@@ -77,7 +77,7 @@ const Experience: React.FC<{ experience: ExperiencesInterface }> = ({experience}
                             animate={dateControl}
                             variants={fadeVariants}
                             viewport={{once: true}}
-                            transition={{ease: [0.43, 0.13, 0.23, 0.96], duration: 0.7, delay: 2.7}}
+                            transition={{ease: [0.43, 0.13, 0.23, 0.96], duration: 0.7, delay: 1.5}}
                             className={'absolute -right-20'}>
                     <Image src={experience.logo} alt={experience.title} width={65} height={65}/>
                 </motion.div>
@@ -92,7 +92,7 @@ const Experience: React.FC<{ experience: ExperiencesInterface }> = ({experience}
                 animate={descControl}
                 variants={boxVariant}
                 viewport={{once: true}}
-                transition={{ease: [0.43, 0.13, 0.23, 0.96], duration: 3, delay: 0.3}}
+                transition={{ease: [0.43, 0.13, 0.23, 0.96], duration: 1.5, delay: 0.3}}
                 className={'absolute inset-0 bg-white'}/>
         </p>
         <div  className={'flex flex-wrap items-center gap-x-1.5 mt-4 relative'}>
@@ -103,7 +103,7 @@ const Experience: React.FC<{ experience: ExperiencesInterface }> = ({experience}
                 animate={descControl}
                 variants={boxVariant}
                 viewport={{once: true}}
-                transition={{ease: [0.43, 0.13, 0.23, 0.96], duration: 3, delay: 0.3}}
+                transition={{ease: [0.43, 0.13, 0.23, 0.96], duration: 1.5, delay: 0.3}}
                 className={'absolute inset-0 bg-white'}/>
             <span className={'text-lg font-semibold'}>Technologies:</span>
             {experience.tools.map((tech, index) => <span className={'text-sm'}
@@ -115,7 +115,7 @@ const Experience: React.FC<{ experience: ExperiencesInterface }> = ({experience}
                     animate={descControl}
                     variants={fadeVariants}
                     viewport={{once: true}}
-                    transition={{ease: [0.43, 0.13, 0.23, 0.96], duration: 0.7, delay: 2.7}}
+                    transition={{ease: [0.43, 0.13, 0.23, 0.96], duration: 0.7, delay: 1.5}}
                     className={'flex gap-3 items-center mt-4'}>
             {experience.website &&
                 <a className={'px-3.5 py-2 bg-black text-white hover:text-black hover:bg-transparent border transition-all'}
