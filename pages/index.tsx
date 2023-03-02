@@ -5,7 +5,7 @@ import data from "@/data/info.json"
 import {InfoInterface} from "@/types/InfoTypes";
 import {Poppins} from 'next/font/google'
 import Skills from "@/components/Skills";
-import Experience from "@/components/Experience";
+import AllExperiences from "@/components/AllExperiences";
 import Flower from "@/components/Flower";
 import {motion} from 'framer-motion'
 
@@ -36,7 +36,7 @@ const Home: NextPage<{ data: InfoInterface }> = ({data}) => {
                                     whileInView={{
                                         left: '100%'
                                     }}
-                                    transition={{ ease: [0.43, 0.13, 0.23, 0.96], duration: 3  ,delay:0.3}}
+                                    transition={{ ease: [0.43, 0.13, 0.23, 0.96], duration: 3  ,delay:0.7}}
                                     viewport={{ once: true }}
                                     className={'absolute inset-0 bg-white'}></motion.span>
                                 When I was younger, I always thought that I want to be an artist, like a photographer or
@@ -78,7 +78,7 @@ const Home: NextPage<{ data: InfoInterface }> = ({data}) => {
                             </p>
                         </Section>
                         <Skills skills={data.skills} familiar={data.familiar}/>
-                        <Experience experiences={data.experiences}/>
+                        <AllExperiences experiences={data.experiences}/>
                     </div>
                 </div>
                 <div className={'absolute inset-0 -z-10'}><Flower/></div>

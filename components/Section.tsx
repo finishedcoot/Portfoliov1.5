@@ -1,5 +1,6 @@
 import React, {ReactNode, useEffect, useRef} from "react";
-import {motion, useAnimation, useInView} from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import {motion, useAnimation} from "framer-motion";
 
 const Section: React.FC<{
     title: string, parentClassName?: string, titleClassName?: string, children: ReactNode
@@ -9,24 +10,22 @@ const Section: React.FC<{
           titleClassName,
           children
       }) => {
-    const ref = useRef(null)
+
     const boxVariant = {
         visible: { left: '100%' },
         hidden: { left: 0 }
     };
     const control = useAnimation();
 
-    const root = useRef(null)
-    const isInView = useInView(ref,{root, margin: "0% -30% -10% -30%", once: true})
+    const [ref, inView] = useInView({ threshold: 0.2 });
 
     useEffect(()=>{
-        if(isInView){
-            console.log('inview')
+        if(inView){
             control.start("visible")
         }
-    },[isInView])
+    },[inView])
 
-    return <section ref={root} className={`flex flex-col ${parentClassName}`}>
+    return <section className={`flex flex-col ${parentClassName}`}>
         <motion.h1 ref={ref} className={titleClassName || 'text-5xl font-semibold w-max relative cursor-default'}>
             {title}
             <motion.span
