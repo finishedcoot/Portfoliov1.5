@@ -19,7 +19,7 @@ const Flower = () => {
 		<div className={'absolute inset-0 -z-10'}>
 		<motion.svg xmlns="http://www.w3.org/2000/svg"
 		            x="0px" y="0px"
-			            viewBox={`0 0 4940 14080`}>
+			            viewBox={`-52 70 2900 14080`}>
 
 			<motion.path
 				custom={0}
