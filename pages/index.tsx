@@ -3,18 +3,34 @@ import {GetStaticProps, NextPage} from "next";
 import data from "@/data/info.json"
 import {InfoInterface} from "@/types/InfoTypes";
 import {Poppins} from 'next/font/google'
-import Skills from "@/components/Skills";
-import AllExperiences from "@/components/AllExperiences";
 import Flower from "@/components/Flower";
 import {motion} from 'framer-motion'
-import About from "@/components/About";
-import Contact from "@/components/Contact";
+import dynamic from "next/dynamic";
+
+const About = dynamic(() => import("@/components/About"), {
+    ssr:true
+});
+const Skills = dynamic(() => import("@/components/Skills"), {
+    ssr:true
+});
+const AllExperiences = dynamic(() => import("@/components/AllExperiences"), {
+    ssr:true
+});
+const Contact = dynamic(() => import("@/components/Contact"), {
+    ssr:false
+});
 
 const Font = Poppins({weight: ['100', '200', '300', '400', '500', '600']})
 
 const Home: NextPage<{ data: InfoInterface }> = ({data}) => {
     return (
         <>
+            <Head>
+                <title>Ardeshir Laghai Portfolio</title>
+                <meta name="description" content="Ardeshir Laghai Portfolio"/>
+                <meta name="viewport" content="width=device-width, initial-scale=1"/>
+                <link rel="icon" href="/icon.svg"/>
+            </Head>
             <main className={`relative w-full overflow-hidden  ${Font.className}`}>
                 <div className={'container mx-auto  grid grid-cols-12 mb-10'}>
                     <div className={'md:col-start-6 col-start-2 col-end-12 flex flex-col'}>
