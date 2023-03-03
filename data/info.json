@@ -39,7 +39,7 @@
 	"experiences": [
 		{
 			"title": "BANINO",
-			"description":"Being engaged in BaninoPC ecommerce web application development from day one by following clean code principles.\nTransforming UI/UX designs into detailed interactive interfaces.\nAlways aimed for the best performance possible by every way we could like code spliting and many of Next.js features like SSR or ISR.\nConsidering every aspect of the application in order to handle authentication and security.\n" ,
+			"description":"This project was created with scalability, performance, and security in mind. The development of this project was a collaborative effort between multiple team members, who used Agile methodologies, HTML, CSS, TypeScript, React.js, Next.js, Recoil, SWR, and TailwindCSS to create detailed interactive interfaces that are responsive and accessible to all users. React.js was used to create efficient and reliable components, while Next.js was used for Server-Side Rendering, Incremental Static Rendering, and Code Splitting. Recoil was used to manage state and data on the client-side, and SWR was used to manage and cache data. TailwindCSS was used to create a consistent look and feel with custom styling, making the application enjoyable to use." ,
 			"tools":[
 				"HTML",
 				"CSS",
@@ -65,7 +65,7 @@
 		},
 		{
 			"title": "ZOIE",
-			"description":"At first Zoie was going to be a simple portfolio for a talented friend of mine, but as we continued to develop it, this simple portfolio turned into a beautiful platform, it was made with reactjs and attention to smallest detail of client preference, currently hosted at aws." ,
+			"description":"The Zoie project is for a talented photographer, it was made with React.js, a powerful and popular JavaScript library, which was used to create the interactive user interface. Subsequently, Next.js was used to provide Server Side Rendering (SSR) and improve the performance of the application.\nCSS, SASS, TypeScript, TailwindCSS, and Styled Components were used to styling the components to match the client's preferences. Redux was employed to manage the application's state and to provide a smooth transition between pages. To create smooth and intuitive animations, Framer Motion was utilized. Finally, Node.js was used to deploy the application on the AWS server.\nThese technologies enabled us to create a beautifully designed platform that fits the client's needs. It is a modern, performant, and reliable platform that enables users to create stunning websites, applications, and portfolios quickly and easily." ,
 			"tools":[
 				"HTML",
 				"CSS",
@@ -87,7 +87,7 @@
 		},
 		{
 			"title": "FAKHR E JAVID",
-			"description":"Fakhr e Javid is a local publication, I've been honered to design and develop their website, with a modern yet minimal approach I was able to build a beautiful and elegant website with all the functionalities they asked for." ,
+			"description":"Designed and developed a website for Fakhr e Javid, a local publication. The goal was to create a modern yet minimal website that is responsive and provides a great user experience. To do this, I used HTML, CSS, SASS, React.js, Gatsby.js, Static Site Generation, Styled Components and Framer Motion. The website was designed with ease-of-use in mind, and I optimized the performance to ensure a fast loading time and smooth scrolling. To provide the best user experience possible, I implemented animation with Framer Motion and made sure to keep the website aesthetically pleasing with Styled Components. In the end, I was able to deliver a website that was both beautiful and functional" ,
 			"tools":[
 				"HTML",
 				"CSS",
@@ -105,7 +105,7 @@
 		},
 		{
 			"title": "SORMEI BEATZ",
-			"description":"Sormei Beatz is a minimal website for the talented musician Omid Hashemi, it is built with React.js, styled with Styled Components and with the help of Three.js I was able to create a interactive, minimal yet chaotic field of 3D noise to visualize different frequencies of the playing song." ,
+			"description":"Created a modern and minimal design for the website of Sormei Beatz. React.js was used to build interactive elements and structures, providing a great user experience for the user. Gatsby.js was implemented for Static Site Generation, which ensures a smooth loading experience for the users. Styled Components were used to maintain a consistent style throughout the website, while Three.js was used to create an interactive 3D noise field to visualize different frequencies of the playing song. Finally, optimization was performed to ensure the website was as fast and efficient as possible" ,
 			"tools":[
 				"HTML",
 				"CSS",
@@ -122,7 +122,7 @@
 		},
 		{
 			"title": "MAHTA CHARITY",
-			"description":"Mahta is a charity for people with hemophilia, in this project I was asked to build some sort of platform for their informative contents such as short books and some video clips, with constant communication and understanding of their needs I built this very simple website with reactjs, I hope to add an admin panel to is very soon." ,
+			"description":"Mahta is a charity for people with hemophilia, As a web developer for Mahta Charity, we applied our technical and creative abilities to create a comprehensive web platform. We took the time to understand Mahta’s needs and used React.js to have quick, modern and responsive website for their informative content. Their website was designed to be intuitive and user-friendly, allowing users to easily find the information they need. Additionally, we created an admin panel for the website, which enabled Mahta to manage their content more efficiently. From crafting the website to finding new solutions for Mahta’s needs all aspects were considered." ,
 			"tools":[
 				"HTML",
 				"CSS",
