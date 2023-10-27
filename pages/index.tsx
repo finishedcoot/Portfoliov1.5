@@ -29,11 +29,11 @@ const Home: NextPage<{ data: InfoInterface }> = ({data}) => {
                 <title>Ardeshir Laghai Portfolio</title>
                 <meta name="description" content="Ardeshir Laghai Portfolio"/>
                 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-                <link rel="icon" href="/icon.svg"/>
+                <link rel="icon" href="/favicon.svg"/>
             </Head>
             <main className={`relative w-full overflow-hidden  ${Font.className}`}>
                 <div className={'container mx-auto  grid grid-cols-12 mb-10'}>
-                    <div className={'md:col-start-6 col-start-2 col-end-12 flex flex-col'}>
+                    <div className={'xl:col-start-6 md:col-start-4 col-start-1 px-4 md:px-0 col-end-12 flex flex-col'}>
                         <section className={'h-screen flex flex-col items-start justify-center'}>
                             <div className={'relative'}>
                                 <h1 className={'text-8xl font-semibold'}>Hello</h1>

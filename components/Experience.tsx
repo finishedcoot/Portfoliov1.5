@@ -23,7 +23,6 @@ const Experience: React.FC<{ experience: ExperiencesInterface }> = ({experience}
 
     useEffect(() => {
         if (titleInView) {
-            console.log('start');
             titleControl.start("visible")
         }
     }, [titleInView])

@@ -29,7 +29,7 @@ const Skills: React.FC<{ skills: string[], familiar: string[] }> = ({skills, fam
     return (<>
         <Section title={'SKILLS'} parentClassName={'mt-32'}>
             <ul
-                className={'relative pl-5 mt-12 max-h-[40vh] grid grid-cols-3 gap-y-4'}>
+                className={'relative pl-5 mt-12 max-h-[40vh] grid md:grid-cols-3 grid-cols-4 gap-y-4'}>
                 <motion.span  ref={skillsInView[0]}
                               initial={{
                                   left: 0
@@ -39,11 +39,11 @@ const Skills: React.FC<{ skills: string[], familiar: string[] }> = ({skills, fam
                               viewport={{ once: true }}
                               transition={{ ease: [0.43, 0.13, 0.23, 0.96], duration: 1.5, delay:0.3 }} className={'absolute inset-0 bg-white'}/>
                 {skills.map((skill, index) => <li key={index}
-                                                       className={'list-disc col-span-1'}>{skill}</li>)}
+                                                       className={'list-disc md:col-span-1 col-span-2'}>{skill}</li>)}
             </ul>
         </Section>
-        <Section title={'FAMILIAR WITH'} parentClassName={'mt-20'}>
-            <ul className={'relative pl-5 mt-12 max-h-[40vh] grid grid-cols-3 gap-y-4'}>
+        <Section title={'FAMILIAR WITH'} parentClassName={'md:mt-20 sm:mt-40 mt-44'}>
+            <ul className={'relative pl-5 mt-12 max-h-[40vh] grid md:grid-cols-3 grid-cols-4 gap-y-4'}>
                 <motion.span ref={familiarWithInView[0]}
                              initial={{
                                  left: 0
@@ -53,7 +53,7 @@ const Skills: React.FC<{ skills: string[], familiar: string[] }> = ({skills, fam
                              viewport={{ once: true }}
                              transition={{ ease: [0.43, 0.13, 0.23, 0.96], duration: 1.5, delay:0.3 }} className={'absolute inset-0 bg-white'}/>
                 {familiar.map((skill, index) => <li key={index}
-                                                         className={'list-disc col-span-1'}>{skill}</li>)}
+                                                         className={'list-disc md:col-span-1 col-span-2'}>{skill}</li>)}
             </ul>
         </Section></>)
 }
