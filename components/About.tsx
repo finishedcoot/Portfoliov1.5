@@ -45,8 +45,7 @@ const About:React.FC = () => {
                 its architectural aspects, learning about different design patterns and their amazing
                 ways
                 of handling all sorts of problems with precision and creative insight, currently I’m
-                learning
-                Nest.js to get more familiar with APIs architectures.
+                learning Asp.net core to get more familiar with APIs architectures.
                 <br/>
                 <br/>
                 I believe there is no unsolvable problem and in the end of the day all I want, is to be
