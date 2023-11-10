@@ -39,7 +39,7 @@ const Skills: React.FC<{ skills: string[], familiar: string[] }> = ({skills, fam
                               viewport={{ once: true }}
                               transition={{ ease: [0.43, 0.13, 0.23, 0.96], duration: 1.5, delay:0.3 }} className={'absolute inset-0 bg-white'}/>
                 {skills.map((skill, index) => <li key={index}
-                                                       className={'list-disc md:col-span-1 col-span-2'}>{skill}</li>)}
+                                                       className={'list-disc md:col-span-1 col-span-2 md:text-sm text-xs'}>{skill}</li>)}
             </ul>
         </Section>
         <Section title={'FAMILIAR WITH'} parentClassName={'md:mt-20 sm:mt-40 mt-44'}>
@@ -53,7 +53,7 @@ const Skills: React.FC<{ skills: string[], familiar: string[] }> = ({skills, fam
                              viewport={{ once: true }}
                              transition={{ ease: [0.43, 0.13, 0.23, 0.96], duration: 1.5, delay:0.3 }} className={'absolute inset-0 bg-white'}/>
                 {familiar.map((skill, index) => <li key={index}
-                                                         className={'list-disc md:col-span-1 col-span-2'}>{skill}</li>)}
+                                                         className={'list-disc md:col-span-1 col-span-2 md:text-sm text-xs'}>{skill}</li>)}
             </ul>
         </Section></>)
 }

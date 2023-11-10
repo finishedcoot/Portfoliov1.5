@@ -40,7 +40,7 @@
 	],
 	"experiences": [
 		{
-			"title": "Exbito",
+			"title": "EXBITO",
 			"description":"Exbito is an online exchange and trading platform for cryptocurrencies, contributed to the success of the platform in an agile framework with a focus on enhancing user experience and technical efficiency. Managed and contributed to four main projects, including the trading web app, admin panel, landing website, and Strapi CMS for the landing website. Key achievements include the modernization of the web application by leading the migration from React-rewired and JavaScript to Vite and TypeScript, resulting in significantly improved code maintainability and overall performance. Additionally, implemented an innovative solution for sharing data between multiple tabs using Web Workers, enhancing real-time data synchronization and user experience. Played a pivotal role in boosting the landing site's performance, resulting in faster load times and improved user engagement. " ,
 			"tools":[
 				"HTML",

@@ -58,7 +58,7 @@ const Experience: React.FC<{ experience: ExperiencesInterface }> = ({experience}
                     transition={{ease: [0.43, 0.13, 0.23, 0.96], duration: 1.5, delay: 0.3}}
                     className={'absolute inset-0 bg-white'}/>
             </h1>
-            <span ref={dateRef} className={'text-sm text-neutral-500 relative'}>
+            <span ref={dateRef} className={'md:text-xs text-[8px] text-neutral-500 relative'}>
 <motion.span
     initial={{
         left: 0
@@ -83,7 +83,7 @@ const Experience: React.FC<{ experience: ExperiencesInterface }> = ({experience}
             }
         </div>
 
-        <p ref={descRef} className={'mt-2 text-sm relative'}>{experience.description}
+        <p ref={descRef} className={'mt-3 md:text-sm text-xs relative'}>{experience.description}
             <motion.span
                 initial={{
                     left: 0
@@ -105,7 +105,7 @@ const Experience: React.FC<{ experience: ExperiencesInterface }> = ({experience}
                 transition={{ease: [0.43, 0.13, 0.23, 0.96], duration: 1.5, delay: 0.3}}
                 className={'absolute inset-0 bg-white'}/>
             <span className={'text-lg font-semibold'}>Technologies:</span>
-            {experience.tools.map((tech, index) => <span className={'text-sm'}
+            {experience.tools.map((tech, index) => <span className={'md:text-sm text-xs'}
                                                          key={index}>{`${index != 0 ? ',' : ''}${tech}`}</span>)}
         </div>
         <motion.div initial={{

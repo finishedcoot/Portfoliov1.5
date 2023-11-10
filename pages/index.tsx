@@ -20,7 +20,7 @@ const Contact = dynamic(() => import("@/components/Contact"), {
     ssr:false
 });
 
-const Font = Poppins({weight: ['100', '200', '300', '400', '500', '600']})
+const Font = Poppins({weight: ['100', '200', '300', '400', '500', '600', '700', '800']})
 
 const Home: NextPage<{ data: InfoInterface }> = ({data}) => {
     return (
